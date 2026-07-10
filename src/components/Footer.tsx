@@ -7,9 +7,13 @@ const Footer = () => {
   const { t } = useTranslation();
 
   return (
-    <footer className="site-footer">
+    <footer className="footer">
       <div className="footer-top">
-        <img src={logo} alt="logo" className="footer-logo" />
+        <div className="footer-brand">
+          <img src={logo} alt="Al Safwa logo" />
+          <h3>{t("footerBrand")}</h3>
+          <p>{t("footerDesc")}</p>
+        </div>
 
         <div className="footer-col">
           <h4>{t("footerNav")}</h4>
